@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="10dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginBottom="24dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginBottom="16dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="remember me"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Forgot password ?"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="@font/poppins_regular"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/shape"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Container untuk New Member dan Register -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Member?"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Register"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+</LinearLayout>
+
